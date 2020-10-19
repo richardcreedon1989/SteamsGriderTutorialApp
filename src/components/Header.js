@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom"   
-import GoogleAuth from "./GoogleAuth"
+import GoogleAuthRedux from "./GoogleAuthRedux"
     
 
 const Header = () => {
@@ -8,7 +8,7 @@ const Header = () => {
                     <Link to="/" className="item" > Streamey </ Link > 
                     <div className="right menu"> 
                     <Link to="/" className="item" > All Streams</Link> 
-                    <GoogleAuth /> 
+                    <GoogleAuthRedux /> 
                     </div> 
              </div> );
 }

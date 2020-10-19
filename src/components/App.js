@@ -7,7 +7,6 @@ import StreamEdit from "./streams/StreamEdit";
 import StreamShow from "./streams/StreamShow";
 import Header from "./Header";
 
-// client ID = 790458747890-f1ucrqihp2603t4nebbciken2gei68ln.apps.googleusercontent.com
 
 const App = () => {
    return (<div className="ui container"> 
