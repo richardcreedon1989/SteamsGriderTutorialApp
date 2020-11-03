@@ -67,6 +67,8 @@ export default reduxForm({
   validate: validate,
 })(StreamForm);
 
+//reduxForm wraps streamform so props passed to RF then SF - allows us to pass special props
+
 // export default reduxForm({
 //   form: "streamCreate",
 //   validate: validate,

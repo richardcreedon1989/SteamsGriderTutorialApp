@@ -14,10 +14,15 @@ class StreamList extends React.Component {
       return (
         <div className="right floated content">
           <Link className="ui button primary" to={`/streams/edit/${stream.id}`}>
-            {" "}
-            Edit{" "}
+            Edit
           </Link>
-          <button className="ui button negative"> Delete </button>
+          <Link
+            to={`/streams/delete/${stream.id}`}
+            className="ui button negative"
+          >
+            {" "}
+            Delete{" "}
+          </Link>
         </div>
       );
     }
@@ -49,8 +54,7 @@ class StreamList extends React.Component {
   render() {
     return (
       <div>
-        {" "}
-        <h2>Streams </h2>{" "}
+        <h2>Streams </h2>
         <div className="ui celled list"> {this.renderList()} </div>
         {this.renderCreateOption()}
       </div>
